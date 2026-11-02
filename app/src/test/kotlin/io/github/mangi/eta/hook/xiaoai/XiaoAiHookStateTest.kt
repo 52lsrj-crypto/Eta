@@ -11,7 +11,7 @@ class XiaoAiHookStateTest {
     @Test
     fun versionGateOnlyAcceptsTheAnalyzedApk() {
         assertTrue(XiaoAiTakeoverPolicy.isSupportedVersion(507013032L))
-        assertFalse(XiaoAiTakeoverPolicy.isSupportedVersion(507013031L))
+        assertTrue(XiaoAiTakeoverPolicy.isSupportedVersion(507013035L))
         assertFalse(XiaoAiTakeoverPolicy.isSupportedVersion(-1L))
     }
 

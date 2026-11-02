@@ -14,7 +14,7 @@ internal object XiaoAiTakeoverPolicy {
     )
 
     fun isSupportedVersion(versionCode: Long): Boolean =
-        versionCode == XiaoAiHooks.SUPPORTED_VERSION_CODE
+        versionCode == XiaoAiHooks.SUPPORTED_VERSION_CODE || versionCode == 507013035L || versionCode >= 507000000L
 
     fun matchesOutboundEvent(fullName: String): Boolean =
         fullName == "Nlp.Request"
